@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import errorLog from './modules/errorLog'
+import app from './modules/app'
+import user from './modules/user'
 import getters from './getters'
 
 Vue.use(Vuex)
@@ -8,9 +9,6 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   modules: {
     app,
-    errorLog,
-    permission,
-    tagsView,
     user
   },
   getters
